@@ -20,7 +20,7 @@ suma = my_function(b=10, a=5)
 suma, diferenta = my_function(numar_mere, c=numar_pere, b=2)
 print(suma, diferenta)
 
-def suma(a, b, c = 3 *args, **kwargs):
+def suma(a, b, c = 3, *args, **kwargs):
     '''
 
     :param c: al treilea parametru

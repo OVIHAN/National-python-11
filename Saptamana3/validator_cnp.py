@@ -48,7 +48,8 @@ def validare_cifra_control(cnp):
         suma = suma + lista_control[i] * int(cnp[i])
     if suma % 11 == 10:
         cifra_control = 1
-    else: cifra_control = suma % 11
+    else:
+        cifra_control = suma % 11
     if int(cnp[12]) == cifra_control:
         return True
     return False
