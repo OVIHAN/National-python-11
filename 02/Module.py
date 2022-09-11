@@ -17,6 +17,6 @@ sys.path.insert(0, BASE)
 
 # print(sys.path)
 #
-# from Saptamana3.functii import test_function
+# from 03.functii import test_function
 # result_modul = test_function(var_1, var_2, var_3)
 # print(result_modul)
