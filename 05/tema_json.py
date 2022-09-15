@@ -43,7 +43,4 @@ dataset = [
         ('XK', [': ', ': ', ': ', ': ', ': ', ': ', '89 ', '93 ', '93 ']),
 ]
 
-conversie = json.dumps(dataset)
-print(dataset['Country'])
 
-# def get_year_data(tara, an):

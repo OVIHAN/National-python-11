@@ -101,22 +101,58 @@
 # print(str1 == str2, str1 is str2)
 
 
-class SuperClasa:
+# class SuperClasa:
+#
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def __str__(self):
+#         return f'Numele meu este {self.name}'
+#
+# class SubClasa(SuperClasa):
+#     def __init__(self, name):
+#        SuperClasa.__init__(self, name)
+#        # self.name = name
+#
+#     # def __str__(self):
+#     #     return self.name
+#
+#
+# obiect = SubClasa('Ovidiu')
+# print(obiect)
 
-    def __init__(self, name):
-        self.name = name
+
+class Super:
+
+    super_variabila = 'super'
+    sub_variabila = 'sub_parinte'
+
+    def __init__(self, name='Ovidiu'):
+        self.nume = name
 
     def __str__(self):
-        return f'Numele meu este {self.name}'
+        return f"numele meu este {self.nume}"
 
-class SubClasa(SuperClasa):
+
+class Mijloc:
+
+    variabila_mijloc = 3
+    super_variabila = 'mijloc'
+
     def __init__(self, name):
-       SuperClasa.__init__(self, name)
-       # self.name = name
-
-    # def __str__(self):
-    #     return self.name
+        self.variabila =11
 
 
-obiect = SubClasa('Ovidiu')
-print(obiect)
+class Sub(Super, Mijloc):
+
+    sub_variabila = 'sub'
+    super_variabila = 'super copil'
+
+    def __init__(self, prenume):
+        super().__init__(name=prenume)
+        self.variabila = 12
+
+
+obiect = Sub("Petre")
+# print(obiect.super_variabila)
+print(obiect.variabila)
